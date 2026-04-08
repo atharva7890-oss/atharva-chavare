@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourist Enquiry</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function submitForm() {
+            let name = document.getElementById("name").value;
+            let place = document.getElementById("place").value;
+
+            if(name === "" || place === "") {
+                alert("Please fill all fields!");
+            } else {
+                alert("Thank you " + name + "! We will provide information about " + place);
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Tourist Enquiry Form</h1>
+</header>
+
+<section>
+    <form>
+        <label>Name:</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label>Place Interested:</label><br>
+        <input type="text" id="place"><br><br>
+
+        <label>Message:</label><br>
+        <textarea></textarea><br><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+</section>
+
+</body>
+</html>
